@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidSample1</string>
+    <string name="start_service">啟動服務</string>
+    <string name="stop_service">終止服務</string>
+    <string name="bind_service">綁定至服務</string>
+    <string name="unbind_service">解除綁定服務</string>
+</resources>
