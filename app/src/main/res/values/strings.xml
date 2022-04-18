@@ -4,4 +4,5 @@
     <string name="stop_service">Stop Service</string>
     <string name="bind_service">Bind Service</string>
     <string name="unbind_service">Unbind Service</string>
+    <string name="get_runtime">Get Runtime</string>
 </resources>

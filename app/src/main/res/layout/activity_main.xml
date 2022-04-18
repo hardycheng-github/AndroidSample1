@@ -20,8 +20,8 @@
         android:id="@+id/btn_stop_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/stop_service"
         android:background="@drawable/btn_style_2"
+        android:text="@string/stop_service"
         app:layout_constraintBottom_toTopOf="@+id/btn_bind_service"
         app:layout_constraintEnd_toEndOf="@+id/btn_bind_service"
         app:layout_constraintStart_toStartOf="@+id/btn_bind_service"
@@ -31,9 +31,10 @@
         android:id="@+id/btn_bind_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_style_1_nor"
         android:text="@string/bind_service"
         android:textColor="#FFFFFF"
-        android:background="@drawable/btn_style_1_nor"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_unbind_service"
         app:layout_constraintEnd_toEndOf="@+id/btn_unbind_service"
         app:layout_constraintStart_toStartOf="@+id/btn_unbind_service"
@@ -43,12 +44,25 @@
         android:id="@+id/btn_unbind_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/unbind_service"
-        android:textColor="#FFFFFF"
         android:background="@drawable/btn_style_1"
+        android:text="@string/unbind_service"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_get_runtime"
+        app:layout_constraintEnd_toEndOf="@+id/btn_get_runtime"
+        app:layout_constraintStart_toStartOf="@+id/btn_get_runtime"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bind_service" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_runtime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_bind_service" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_unbind_service" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
